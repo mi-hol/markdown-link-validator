@@ -44,6 +44,15 @@ export const options = optionator({
             option: 'help',
             type: 'Boolean'
         },
+        { heading: 'Log configuration' },
+        {
+            alias: 'oi',
+            concatRepeatedArrays: [true, { oneValuePerFlag: true }],
+            default: '[]',
+            description: 'file name for logging of file with invalid links',
+            option: 'ignorePatterns',
+            type: 'path::[String]'
+        },
         { heading: 'Miscellaneous' },
         {
             default: false,

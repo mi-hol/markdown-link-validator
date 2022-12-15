@@ -102,8 +102,8 @@ const reportLinks = (mdFiles: IMDFile[], directory: string): void => {
         }
 
         console.log(chalkColor(`Found ${totalLinksInFile.error + totalLinksInFile.success} links:
-    ${totalLinksInFile.success} valid
-    ${totalLinksInFile.error} invalid`));
+            ${totalLinksInFile.success} valid
+            ${totalLinksInFile.error} invalid`));
     });
 
     console.log('');
